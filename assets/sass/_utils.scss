@@ -1,0 +1,44 @@
+.blind {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.imgbox[lazy=loading] {
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.imgbox[lazy=loaded] {
+  background-size: cover;
+  background-position: 50% 50%;
+  -webkit-animation-duration: .6s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-timing-function: cubic-bezier(0,.02,.02,1.4);
+}
+.imgbox[lazy=error] {
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.imgbox[lazy=error] {
+  background-size: cover;
+  background-position: 50% 50%;
+  -webkit-animation-duration: .6s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-timing-function: cubic-bezier(0,.02,.02,1.4);
+}

@@ -1,0 +1,5 @@
+module.exports = {
+  apiPath: 'https://www.easy-mock.com', // api接口前缀
+  publicPath: '/wechat', // 静态资源前缀
+  prod: false // 是否为生产环境
+}
